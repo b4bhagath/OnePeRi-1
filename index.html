@@ -27,8 +27,8 @@
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-              <div class="navbar-header">
+      <div class="container">
+            <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -40,16 +40,16 @@
                 <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                   <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
-                        aria-hidden="true"></span> Home</a></li>
-                        <li><a href="aboutus.html"><span class="	glyphicon glyphicon-info-sign"
-                              aria-hidden="true"></span> About</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                         role="button" aria-haspopup="true" aria-expanded="false">
-                         <span class="glyphicon glyphicon-list-alt"
-                               aria-hidden="true"></span>
-                               Menu <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                    aria-hidden="true"></span> Home</a></li>
+                    <li><a href="aboutus.html"><span class="	glyphicon glyphicon-info-sign"
+                        aria-hidden="true"></span> About</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                          role="button" aria-haspopup="true" aria-expanded="false">
+                          <span class="glyphicon glyphicon-list-alt"
+                          aria-hidden="true"></span>
+                          Menu <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
                             <li><a href="#">Appetizers</a></li>
                             <li><a href="#">Main Courses</a></li>
                             <li><a href="#">Desserts</a></li>
@@ -58,13 +58,30 @@
                             <li class="dropdown-header">Specials</li>
                             <li><a href="#">Lunch Buffet</a></li>
                             <li><a href="#">Weekend Brunch</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contactus.html">
+                          <i class="fa fa-envelope-o"></i> Contact</a></li>
                         </ul>
-                     </li>
-                     <li><a href="contactus.html">
-                       <i class="fa fa-envelope-o"></i> Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+                        <form class="navbar-form navbar-right" role="SignIn">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Password">
+                          </div>
+                          <button type="submit" class="btn btn-info">Sign in</button>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> <b style="color: whitesmoke;">Remember me</b>
+                                </label>
+                              </div>
+                        </form>
+                  </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
     <header class="jumbotron">
 
         <!-- Main component for a primary marketing message or call to action -->
@@ -80,9 +97,14 @@
                     <p style="padding:20px;"></p>
                     <img src="img/logo.png" class="img-responsive">
                 </div>
+                <div>
+                  <div class="col-xs-12 col-sm-2">
+                    <p style="padding:40px;"></p>
+                    <button type="button" class="btn btn-warning">Reserve table</button>
+                    </div>
+                </div>
                 </div>
             </div>
-        </div>
     </header>
 
     <div class="container">
@@ -100,7 +122,8 @@
                       </a>
                   </div>
                   <div class="media-body">
-                      <h2 class="media-heading">Uthappizza</h2>
+                      <h2 class="media-heading">Uthappizza <span class="label label-danger">Hot</span> <span class="badge">$4.99</span></h2>
+                      <p style="padding:1px;"></p>
                       <p>A unique combination of Indian Uthappam (pancake) and
                         Italian pizza, topped with Cerignola olives, ripe vine
                         cherry tomatoes, Vidalia onion, Guntur chillies and
@@ -108,7 +131,6 @@
                       <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
                   </div>
               </div>
-              <p><a  href="#">More &raquo;</a></p>
             </div>
         </div>
 
@@ -120,14 +142,15 @@
             </div>
             <div class="col-xs-12 col-sm-9">
               <div class="media">
-                    <div class="pull-right media-middle">
+                    <div class="pull-right">
                         <a href="#">
                         <img class="media-object img-thumbnail"
-                         src="img/buffet.png" alt="Uthappizza">
+                         src="img/buffet.png" alt="This Month's Promotions">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h2 class="media-heading">Weekend Grand Buffet</h2>
+                        <h2 class="media-heading">Weekend Grand Buffet <span class="label label-danger">New</span></h2>
+                        <p style="padding:1px;"></p>
                         <p>Featuring mouthwatering combinations with a choice of
                            five different salads, six enticing appetizers,
                            six main entrees and five choicest desserts.
@@ -149,12 +172,13 @@
                   <div class="media-left media-middle">
                       <a href="#">
                       <img class="media-object img-thumbnail"
-                       src="img/alberto.png" alt="Alberto Somayya">
+                       src="img/New folder/alberto.png" alt="Alberto Somayya">
                       </a>
                   </div>
                   <div class="media-body">
                       <h2 class="media-heading">Alberto Somayya</h2>
                       <h4>Executive Chef</h4>
+                      <p style="padding:1px;"></p>
                       <p>Award winning three-star Michelin chef with wide
                        International experience having worked closely with
                        whos-who in the culinary world, he specializes in
@@ -165,7 +189,80 @@
               </div>
             </div>
         </div>
-    </div>
+         </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <p style="padding:50px;"></p>
+              <h2> Reserve a Table </h2>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+              <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                  <div class="row">
+                  <h5 style="font-weight: bold;"> Number of Guests </h5>
+                  </div>
+                  <div class="row">
+                  <h5 style="font-weight: bold;"> Date and Time </h5>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-9">
+                  <div class="row">
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 2
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 3
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 4
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 5
+                      </label>
+                  </div>
+                    <p style="padding:10px;"></p>
+                    </div>
+                  <div class="col-xs-6 col-sm-9">
+                    <div class="row">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="form-group has-success has-feedback">
+                            <label class="sr-only" for="Date">Date</label>
+                            <input type="date" class="form-control" id="Date" aria-describedby="date">
+                                <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
+                              <span id="date" class="sr-only">(success)</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group has-success has-feedback">
+                            <label class="sr-only" for="Time">Time</label>
+                         <input type="Time" class="form-control" id="time" aria-describedby="date">
+                                <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"></span>
+                              <span id="date" class="sr-only">(success)</span>
+                        </div>
+                        </div>
+                        </form>
+                        <div class="form-group">
+                            <p style="padding:5px;"></p>
+                        <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12">
+                      <div class="alert alert-warning alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <strong>Warning!: </strong>Please <strong>call</strong> us to reserve for more than six guests.
+                      </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
 
     <footer class=" row row-footer">
         <div class="container">
