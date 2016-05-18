@@ -63,7 +63,20 @@
                         <li><a href="contactus.html">
                           <i class="fa fa-envelope-o"></i> Contact</a></li>
                         </ul>
-                        <form class="navbar-form navbar-right" role="SignIn">
+                        </div>
+                        </div>
+                  </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login </h4>
+            </div>
+            <div class="modal-body">
+
+            <form class="form-inline" role="SignIn">
                           <div class="form-group">
                             <input type="text" class="form-control" placeholder="Email">
                           </div>
@@ -76,10 +89,12 @@
                                   <input type="checkbox"> <b style="color: whitesmoke;">Remember me</b>
                                 </label>
                               </div>
-                        </form>
-                        </div>
-                        </div>
-                  </nav>
+                        </form> 
+
+            </div>
+        </div>
+        </div>
+    </div> 
     <header class="jumbotron">
 
         <!-- Main component for a primary marketing message or call to action -->
@@ -98,7 +113,11 @@
                 <div>
                   <div class="col-xs-12 col-sm-2">
                     <p style="padding:40px;"></p>
-                    <button type="button" class="btn btn-warning">Reserve table</button>
+                      
+                    <a type="button" class="btn btn-warning btn-block"
+                    data-toggle="tooltip" title="Or Call us at +852 12345678"
+                     data-placement="bottom" href="#reserveform">Reserve table</a>
+                      
                     </div>
                 </div>
                 </div>
@@ -309,5 +328,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+         });
+    </script>
 </body>
 </html>
