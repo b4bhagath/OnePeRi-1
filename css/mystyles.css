@@ -93,3 +93,13 @@ h5,h4{
     font-weight: bold;
     color: black;
 }
+
+.affix {
+    top:100px;
+}
+
+#carouselButtons {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
